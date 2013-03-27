@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="txt/html; charset=utf-8" />
+        <title>TreinaWeb Curso - Questionário</title>
+        <link rel="stylesheet" href="css/questionario.css" type="text/css" /> 
+        <script type="text/javascript" src="js/questionario.js"></script>
+    </head>
+    <body>
+        <div class="questionario" id="questionario" name="questionario">
+            <div class="titulo" id="titulo" name="titulo"> Questionário </div>
+            <div class="separador" id="sep_01" name="sep_01"></div>
+            <div class="respostas" id="respostas" name="respostas">
+                <div class="rotulo_atual" id="rot_nome_completo" name="rot_nome_completo">Nome:</div>
+                <div class="dados_atual" id="dad_nome_completo" name="dad_nome_completo"></div>
+                <div class="rotulo_faltando" id="rot_apelido" name="rot_apelido">Apelido:</div>
+                <div class="dados_faltando" id="dad_apelido" name="dad_apelido"></div>
+                <div class="rotulo_faltando" id="rot_sexo" name="rot_sexo">Sexo:</div>
+                <div class="dados_faltando" id="dad_sexo" name="dad_sexo"></div>
+                <div class="rotulo_faltando" id="rot_tratamento" name="rot_tratamento">Tratamento:</div>
+                <div class="dados_faltando" id="dad_tratamento" name="dad_tratamento"></div>
+                <div class="rotulo_faltando" id="rot_data_nascimento" name="rot_data_nascimento">Data de Nascimento:</div>
+                <div class="dados_faltando" id="dad_data_nascimento" name="dad_data_nascimento"></div>
+                <div class="rotulo_faltando" id="rot_idade" name="rot_idade">Idade:</div>
+                <div class="dados_faltando" id="dad_idade" name="dad_idade"></div>
+                <div class="rotulo_faltando" id="rot_email" name="rot_email">E-mail:</div>
+                <div class="dados_faltando" id="dad_email" name="dad_email"></div>
+            </div>
+            <div class="separador" id="sep_02" name="sep_02"></div>
+            <div class="questoes" id="questoes" name="questoes">
+                <div class="questoes_nome_completo" id="questoes_nome_completo" name="questoes_nome_completo">
+                    Digite abaixo o seu nome completo e clique em 'OK':<br />
+                    <input type="text" id="nome_completo" name="nome_completo" size=100 /><br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('nome_completo');"/>
+                </div>
+                <div class="questoes_apelido" id="questoes_apelido" name="questoes_apelido">
+                    Digite abaixo o seu apelido:<br />
+                    <input type="text" id="apelido" name="apelido"  size=50 /><br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('apelido');"/>
+                </div>
+                <div class="questoes_sexo" id="questoes_sexo" name="questoes_sexo">
+                    Você é do Sexo?&nbsp;&nbsp;<input type="text" id="sexo" name="sexo" disabled/><br />
+                    <input type="radio" id="masculino" name="rad_sexo" value="M" onclick="insereTexto('m','sexo');"/><label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="rad_sexo" value="F"  onclick="insereTexto('f','sexo');"/><label for="feminno">Feminino</label><br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('sexo');"/>
+                </div>
+                <div class="questoes_tratamento" id="questoes_tratamento" name="questoes_tratamento">
+                </div>
+                <div class="questoes_data_nascimento" id="questoes_data_nascimento" name="questoes_data_nascimento">
+                    Digite abaixo a sua data de nascimento e clique em 'OK':<br />
+                    (O formato da data deve ser dd/mm/aaaa)<br />
+                    <input type="text" id="data_nascimento" name="data_nascimento" /><br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('data_nascimento');"/>
+                </div>
+                <div class="questoes_idade" id="questoes_idade" name="questoes_idade">
+                    A sua idade é:<br />
+                    <input type="text" id="idade" name="idade" onkeypress="return verificaIdade();"/><br />
+                    Se estiver correta clique em OK se não estiver correta modifique-a acima<br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('idade');"/>
+                </div>
+                <div class="questoes_email" id="questoes_email" name="questoes_email">
+                    Clique na caixa de texto abaixo, digite o seu e-mail e clique em 'OK':<br />
+                    <input type="text" id="email" name="email" size=100 readonly onclick="insereEmail();" /><br />
+                    <input type="button" id="ok" name="ok" value="OK" onclick="ok('email');"/>
+                </div>
+                <div class="questoes_fim" id="questoes_fim" name="questoes_fim">
+                    Não há mais questões!
+                </div>
+            </div>
+            <div class="separador" id="sep_03" name="sep_03"></div>
+            <div class="botoes" id="botoes" name="botoes">
+                <input type="button" name="anterior" id="anterior" value="Anterior" onclick="navegacao('anterior');" disabled />
+                <input type="button" name="concluir" id="limpar" value="limpar" onclick="limpar('questionario');" />
+                <input type="button" name="concluir" id="concluir" value="Concluir" onclick="concluir();" disabled />
+                <input type="button" name="imprimir" id="imprimir" value="Imprimir" onclick="window.print();" />
+                <input type="button" name="proximo" id="proximo" value="Próximo" onclick="navegacao('proximo');" disabled />
+            </div>
+        </div>
+</html>

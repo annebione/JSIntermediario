@@ -1,0 +1,222 @@
+body{
+    font-family: Verdana, Arial;
+}
+
+.questionario {
+    position: absolute;
+    display: block;
+    width: 700px;
+}
+
+.titulo {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+}
+
+.respostas {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    padding-top: 5px;
+}
+
+.questoes {
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.botoes {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.separador {
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+
+.rotulo_atual {
+    position: absolute;
+    display: block;
+    width: 28%;
+    height: 20px;
+    left: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px;
+    background-color: yellow;
+    color: blue;
+}
+
+.dados_atual {
+    position: relative;
+    left: 205px;
+    display: block;
+    width: 69.8%;
+    height: 20px;
+    vertical-align: central;
+    text-align: left;
+    font-size: small;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px; 
+    background-color: yellow;
+    color: blue;
+}
+
+.rotulo_faltando {
+    position: absolute;
+    display: block;
+    width: 28%;
+    height: 20px;
+    left: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px;
+    background-color: red;
+    color: white;
+}
+
+.dados_faltando {
+    position: relative;
+    left: 205px;
+    display: block;
+    width: 69.8%;
+    height: 20px;
+    vertical-align: central;
+    text-align: left;
+    font-size: small;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px; 
+    background-color: red;
+    color: white;
+}
+
+.rotulo_ok {
+    position: absolute;
+    display: block;
+    width: 28%;
+    height: 20px;
+    left: 5px;
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px;
+    background-color: green;
+    color: white;
+}
+
+.dados_ok {
+    position: relative;
+    left: 205px;
+    display: block;
+    width: 69.8%;
+    height: 20px;
+    vertical-align: central;
+    text-align: left;
+    font-size: small;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    margin-bottom: 5px; 
+    padding-top: 2px; 
+    background-color: green;
+    color: white;
+}
+
+
+.questoes_nome_completo{
+    display: block;
+}
+
+.questoes_apelido{
+    display: none;
+}
+
+.questoes_sexo{
+    display: none;
+}
+
+.questoes_tratamento{
+    display: none;
+}
+
+.questoes_data_nascimento{
+    display: none;
+}
+
+.questoes_idade{
+    display: none;
+}
+
+.questoes_email{
+    display: none;
+}
+
+.questoes_fim{
+    display: none;
+}
